@@ -8,7 +8,7 @@ const App = () => {
   const [editCustomer, setEditCustomer] = useState({});
   const [editMode, setEditMode] = useState(false);
 
-  const URL = "https://customers-appv2.herokuapp.com/api/customers";
+  const URL = process.env.REACT_APP_URL;
 
   const loadData = async () => {
     try {
